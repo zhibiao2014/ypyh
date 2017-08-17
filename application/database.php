@@ -14,13 +14,14 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => 'localhost',
+    'hostname'        => '39.108.125.83',
+//     'hostname'        => '127.0.0.1',
     // 数据库名
     'database'        => 'fastadmin',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'ypys',
     // 密码
-    'password'        => '123456',
+    'password'        => 'YPys2017',
     // 端口
     'hostport'        => '',
     // 连接dsn
