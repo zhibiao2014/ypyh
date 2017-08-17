@@ -1,8 +1,8 @@
 <?php
 
 return array (
-  'name' => 'FastAdmin',
-  'beian' => '粤ICP备15054802号-4',
+  'name' => '一品艺活',
+  'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',
   'timezone' => 'Asia/Shanghai',
