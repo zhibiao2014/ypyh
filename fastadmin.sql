@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : WAMP
-Source Server Version : 50714
-Source Host           : localhost:3306
+Source Server         : 39.108.125.83
+Source Server Version : 50556
+Source Host           : 39.108.125.83:3306
 Source Database       : fastadmin
 
 Target Server Type    : MYSQL
-Target Server Version : 50714
+Target Server Version : 50556
 File Encoding         : 65001
 
-Date: 2017-08-17 14:38:01
+Date: 2017-08-18 14:04:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -40,7 +40,7 @@ CREATE TABLE `fa_admin` (
 -- ----------------------------
 -- Records of fa_admin
 -- ----------------------------
-INSERT INTO `fa_admin` VALUES ('1', 'admin', 'Admin', '7f9f3b562d6c28cc4764eec1411dcab9', '352189', '/assets/img/avatar.png', 'admin@admin.com', '0', '1502437121', '1492186163', '1502437121', 'de27f1e4-6d08-4746-96d8-62e79227927f', 'normal');
+INSERT INTO `fa_admin` VALUES ('1', 'admin', 'Admin', '7f9f3b562d6c28cc4764eec1411dcab9', '352189', '/assets/img/avatar.png', 'admin@admin.com', '0', '1502961225', '1492186163', '1502961225', '1a49ffea-8470-457d-bf33-09b05f3169a9', 'normal');
 
 -- ----------------------------
 -- Table structure for fa_admin_log
@@ -58,7 +58,7 @@ CREATE TABLE `fa_admin_log` (
   `createtime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '操作时间',
   PRIMARY KEY (`id`),
   KEY `name` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=1285 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='管理员日志表';
+) ENGINE=InnoDB AUTO_INCREMENT=1325 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='管理员日志表';
 
 -- ----------------------------
 -- Records of fa_admin_log
@@ -130,6 +130,36 @@ INSERT INTO `fa_admin_log` VALUES ('1281', '1', 'admin', '/admin/?callback=jQuer
 INSERT INTO `fa_admin_log` VALUES ('1282', '1', 'admin', '/admin/ajax/upload', '', '{\"name\":\"QQ\\u56fe\\u724720170518171734.png\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502949912');
 INSERT INTO `fa_admin_log` VALUES ('1283', '1', 'admin', '/admin/?callback=jQuery22409079881073893192_1502950149198', '', '{\"callback\":\"jQuery22409079881073893192_1502950149198\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502950149');
 INSERT INTO `fa_admin_log` VALUES ('1284', '1', 'admin', '/admin/?callback=jQuery224035256932569296895_1502950167962', '', '{\"callback\":\"jQuery224035256932569296895_1502950167962\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502950168');
+INSERT INTO `fa_admin_log` VALUES ('1285', '1', 'admin', '/index.php/admin/?callback=jQuery22409035677098501476_1502959982871', '', '{\"callback\":\"jQuery22409035677098501476_1502959982871\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502959983');
+INSERT INTO `fa_admin_log` VALUES ('1286', '1', 'admin', '/index.php/admin/?callback=jQuery2240621706279115108_1502960110223', '', '{\"callback\":\"jQuery2240621706279115108_1502960110223\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960110');
+INSERT INTO `fa_admin_log` VALUES ('1287', '1', 'admin', '/index.php/admin/index/login', '登录', '{\"__token__\":\"2690712dc77d2fcea2dec8a5dbc28ad4\",\"username\":\"admin\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960578');
+INSERT INTO `fa_admin_log` VALUES ('1288', '1', 'admin', '/index.php/admin/?callback=jQuery224004016056093570075_1502960580557', '', '{\"callback\":\"jQuery224004016056093570075_1502960580557\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960580');
+INSERT INTO `fa_admin_log` VALUES ('1289', '1', 'admin', '/index.php/admin/index/login', '登录', '{\"__token__\":\"d3c61437b961dc07c45610a880959597\",\"username\":\"admin\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960895');
+INSERT INTO `fa_admin_log` VALUES ('1290', '1', 'admin', '/index.php/admin/?callback=jQuery224031152777704036616_1502960899308', '', '{\"callback\":\"jQuery224031152777704036616_1502960899308\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960899');
+INSERT INTO `fa_admin_log` VALUES ('1291', '1', 'admin', '/index.php/admin/?callback=jQuery22409381111206198027_1502960931322', '', '{\"callback\":\"jQuery22409381111206198027_1502960931322\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960931');
+INSERT INTO `fa_admin_log` VALUES ('1292', '1', 'admin', '/index.php/admin/?callback=jQuery22404355797468312923_1502960943600', '', '{\"callback\":\"jQuery22404355797468312923_1502960943600\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960944');
+INSERT INTO `fa_admin_log` VALUES ('1293', '1', 'admin', '/index.php/admin/general.config/edit', '常规管理 系统配置 编辑', '{\"row\":{\"name\":\"\\u4e00\\u54c1\\u827a\\u6d3b\",\"beian\":\"\",\"cdnurl\":\"\",\"version\":\"1.0.1\",\"timezone\":\"Asia\\/Shanghai\",\"forbiddenip\":\"\",\"languages\":{\"field\":{\"backend\":\"backend\",\"frontend\":\"frontend\"},\"value\":{\"backend\":\"zh-cn\",\"frontend\":\"zh-cn\"}},\"fixedpage\":\"dashboard\"}}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502960958');
+INSERT INTO `fa_admin_log` VALUES ('1294', '1', 'admin', '/index.php/admin/?callback=jQuery224038147581319826096_1502961131436', '', '{\"callback\":\"jQuery224038147581319826096_1502961131436\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502961135');
+INSERT INTO `fa_admin_log` VALUES ('1295', '1', 'admin', '/index.php/admin/index/login', '登录', '{\"__token__\":\"e52dcaca876cdc98ecf89b08d525237f\",\"username\":\"admin\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502961226');
+INSERT INTO `fa_admin_log` VALUES ('1296', '1', 'admin', '/index.php/admin/?callback=jQuery22404273238030931872_1502961228281', '', '{\"callback\":\"jQuery22404273238030931872_1502961228281\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502961231');
+INSERT INTO `fa_admin_log` VALUES ('1297', '1', 'admin', '/index.php/admin/?callback=jQuery22406337258117072921_1502962449919', '', '{\"callback\":\"jQuery22406337258117072921_1502962449919\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962450');
+INSERT INTO `fa_admin_log` VALUES ('1298', '1', 'admin', '/index.php/admin/?callback=jQuery22403169918491344823_1502962673817', '', '{\"callback\":\"jQuery22403169918491344823_1502962673817\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962675');
+INSERT INTO `fa_admin_log` VALUES ('1299', '1', 'admin', '/index.php/admin/?callback=jQuery2240529521949359181_1502962790228', '', '{\"callback\":\"jQuery2240529521949359181_1502962790228\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962791');
+INSERT INTO `fa_admin_log` VALUES ('1300', '1', 'admin', '/index.php/admin/?callback=jQuery224025021967645213694_1502962858064', '', '{\"callback\":\"jQuery224025021967645213694_1502962858064\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962858');
+INSERT INTO `fa_admin_log` VALUES ('1301', '1', 'admin', '/index.php/admin/general/crontab/get_schedule_future', '', '{\"schedule\":\"* * * * *\",\"days\":\"7\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962935');
+INSERT INTO `fa_admin_log` VALUES ('1302', '1', 'admin', '/index.php/admin/general/crontab/get_schedule_future', '', '{\"schedule\":\"* * * * *\",\"days\":\"7\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962943');
+INSERT INTO `fa_admin_log` VALUES ('1303', '1', 'admin', '/index.php/admin/general/crontab/check_schedule', '', '{\"row\":{\"schedule\":\"* * * * *\"}}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962970');
+INSERT INTO `fa_admin_log` VALUES ('1304', '1', 'admin', '/index.php/admin/general/crontab/get_schedule_future', '', '{\"schedule\":\"* * * * *\",\"days\":\"7\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962970');
+INSERT INTO `fa_admin_log` VALUES ('1305', '1', 'admin', '/index.php/admin/general/crontab/edit/ids/1?dialog=1', '常规管理 定时任务 编辑 ', '{\"dialog\":\"1\",\"row\":{\"title\":\"\\u8bf7\\u6c42\\u767e\\u5ea6\",\"type\":\"url\",\"content\":\"http:\\/\\/www.baidu.com\",\"schedule\":\"* * * * *\",\"maximums\":\"0\",\"begintime\":\"2017-01-01 00:00:00\",\"endtime\":\"2019-01-01 00:00:00\",\"weigh\":\"1\",\"status\":\"normal\"},\"ids\":\"1\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962971');
+INSERT INTO `fa_admin_log` VALUES ('1306', '1', 'admin', '/index.php/admin/general.database/query', '常规管理 数据库管理 查询', '{\"do_action\":\"viewdata\",\"tablename\":[\"fa_attachment\"],\"submit2\":\"\\u67e5\\u770b\\u8868\\u6570\\u636e\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962993');
+INSERT INTO `fa_admin_log` VALUES ('1307', '1', 'admin', '/index.php/admin/general.database/query', '常规管理 数据库管理 查询', '{\"do_action\":\"viewdata\",\"tablename\":[\"fa_auth_group\"],\"submit2\":\"\\u67e5\\u770b\\u8868\\u6570\\u636e\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502962999');
+INSERT INTO `fa_admin_log` VALUES ('1308', '1', 'admin', '/index.php/admin/general.database/query', '常规管理 数据库管理 查询', '{\"do_action\":\"viewinfo\",\"tablename\":[\"fa_auth_group\"],\"submit1\":\"\\u67e5\\u770b\\u8868\\u7ed3\\u6784\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502963004');
+INSERT INTO `fa_admin_log` VALUES ('1309', '1', 'admin', '/index.php/admin/general.database/query', '常规管理 数据库管理 查询', '{\"do_action\":\"optimizeall\",\"tablename\":[\"fa_auth_group\"],\"submit5\":\"\\u4f18\\u5316\\u5168\\u90e8\\u8868\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502963013');
+INSERT INTO `fa_admin_log` VALUES ('1310', '1', 'admin', '/index.php/admin/general.database/query', '常规管理 数据库管理 查询', '{\"do_action\":\"viewinfo\",\"tablename\":[\"fa_auth_group\"],\"submit1\":\"\\u67e5\\u770b\\u8868\\u7ed3\\u6784\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502963017');
+INSERT INTO `fa_admin_log` VALUES ('1311', '1', 'admin', '/index.php/admin/general/attachment/del/ids/2', '常规管理 附件管理 删除', '{\"action\":\"del\",\"ids\":\"2\",\"params\":\"\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502963024');
+INSERT INTO `fa_admin_log` VALUES ('1322', '1', 'admin', '/index.php/admin/auth/adminlog/del/ids/1321,1320,1319,1318,1317,1316,1315,1314,1313,1312', '权限管理 管理员日志 删除', '{\"action\":\"del\",\"ids\":\"1321,1320,1319,1318,1317,1316,1315,1314,1313,1312\",\"params\":\"\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502963828');
+INSERT INTO `fa_admin_log` VALUES ('1323', '1', 'admin', '/index.php/admin/auth/group/roletree', '', '{\"pid\":\"1\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1502963848');
+INSERT INTO `fa_admin_log` VALUES ('1324', '1', 'admin', '/index.php/admin/?callback=jQuery22402647446776740763_1503033253427', '', '{\"callback\":\"jQuery22402647446776740763_1503033253427\"}', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', '1503033254');
 
 -- ----------------------------
 -- Table structure for fa_attachment
@@ -151,13 +181,13 @@ CREATE TABLE `fa_attachment` (
   `storage` enum('local','upyun') NOT NULL DEFAULT 'local' COMMENT '存储位置',
   `sha1` varchar(40) NOT NULL DEFAULT '' COMMENT '文件 sha1编码',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='附件表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='附件表';
 
 -- ----------------------------
 -- Records of fa_attachment
 -- ----------------------------
 INSERT INTO `fa_attachment` VALUES ('1', '/assets/img/qrcode.png', '150', '150', 'png', '0', '21859', 'image/png', '', '1499681848', '1499681848', '1499681848', 'local', '17163603d0263e4838b9387ff2cd4877e8b018f6');
-INSERT INTO `fa_attachment` VALUES ('2', '/uploads/20170817/fa1fba19d119a0a843926e73c1fc04f9.png', '1441', '369', 'png', '0', '79697', 'image/png', '', '1502949912', '1502949912', '1502949912', 'local', '1e6c29cc02150abbcd1b06146f21cdb1403d1546');
+INSERT INTO `fa_attachment` VALUES ('3', '/uploads/20170817/7825bff9ae470027b76cb27c3f4446e3.exe', '', '', 'exe', '0', '1874640', 'application/x-msdownload', '', '1502963776', '1502963776', '1502963776', 'local', 'ea6c0c2fbe1fea96dbdb0875338338a18eba2500');
 
 -- ----------------------------
 -- Table structure for fa_auth_group
@@ -421,7 +451,7 @@ CREATE TABLE `fa_config` (
 -- ----------------------------
 -- Records of fa_config
 -- ----------------------------
-INSERT INTO `fa_config` VALUES ('1', 'name', 'basic', '站点名称', '请填写站点名称', 'string', 'FastAdmin', '', 'required', '');
+INSERT INTO `fa_config` VALUES ('1', 'name', 'basic', '站点名称', '请填写站点名称', 'string', '一品艺活', '', 'required', '');
 INSERT INTO `fa_config` VALUES ('2', 'beian', 'basic', '备案号', '粤ICP备15054802号-4', 'string', '', '', '', '');
 INSERT INTO `fa_config` VALUES ('3', 'cdnurl', 'basic', 'CDN地址', '如果使用CDN云储存请配置该值', 'string', '', '', '', '');
 INSERT INTO `fa_config` VALUES ('4', 'version', 'basic', '版本号', '如果静态资源有变动请重新配置该值', 'string', '1.0.1', '', 'required', '');
@@ -465,7 +495,7 @@ CREATE TABLE `fa_crontab` (
 -- ----------------------------
 -- Records of fa_crontab
 -- ----------------------------
-INSERT INTO `fa_crontab` VALUES ('1', 'url', '请求FastAdmin', 'http://www.fastadmin.net', '* * * * *', '0', '0', '13548', '1497070825', '1501253101', '1483200000', '1546272000', '1501253101', '1', 'normal');
+INSERT INTO `fa_crontab` VALUES ('1', 'url', '请求百度', 'http://www.baidu.com', '* * * * *', '0', '0', '13548', '1497070825', '1502962971', '1483200000', '1546272000', '1501253101', '1', 'normal');
 INSERT INTO `fa_crontab` VALUES ('2', 'sql', '查询一条SQL', 'SELECT 1;', '* * * * *', '0', '0', '13548', '1497071095', '1501253101', '1483200000', '1546272000', '1501253101', '2', 'normal');
 
 -- ----------------------------
@@ -579,7 +609,7 @@ CREATE TABLE `fa_version` (
   `weigh` int(10) NOT NULL DEFAULT '0' COMMENT '权重',
   `status` varchar(30) NOT NULL DEFAULT '' COMMENT '状态',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='版本表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='版本表';
 
 -- ----------------------------
 -- Records of fa_version
@@ -625,7 +655,7 @@ CREATE TABLE `fa_wechat_config` (
 -- ----------------------------
 -- Records of fa_wechat_config
 -- ----------------------------
-INSERT INTO `fa_wechat_config` VALUES ('1', 'menu', '微信菜单', '[{\"name\":\"FastAdmin\",\"sub_button\":[{\"name\":\"官网\",\"type\":\"view\",\"url\":\"http:\\/\\/www.fastadmin.net\"},{\"name\":\"在线演示\",\"type\":\"click\",\"key\":\"\"},{\"name\":\"文档\",\"type\":\"view\",\"url\":\"http:\\/\\/doc.fastadmin.net\"}]},{\"name\":\"在线客服\",\"type\":\"click\",\"key\":\"58cb852984970\"},{\"name\":\"关于我们\",\"type\":\"click\",\"key\":\"58bf944aa0777\"}]', '1497398820', '1500538185');
+INSERT INTO `fa_wechat_config` VALUES ('1', 'menu', '微信菜单', '[{\"name\":\"FastAdmin\",\"sub_button\":[{\"name\":\"官网\",\"type\":\"view\",\"url\":\"http:\\/\\/www.fastadmin.net\"},{\"name\":\"在线演示\",\"type\":\"click\",\"key\":\"\"},{\"name\":\"文档\",\"type\":\"view\",\"url\":\"http:\\/\\/doc.fastadmin.net\"},{\"name\":\"添加子菜单\",\"type\":\"pic_sysphoto\",\"key\":\"\"}]},{\"name\":\"在线客服\",\"type\":\"click\",\"key\":\"58cb852984970\"},{\"name\":\"关于我们\",\"type\":\"click\",\"key\":\"58bf944aa0777\"}]', '1497398820', '1502963752');
 INSERT INTO `fa_wechat_config` VALUES ('2', 'service', '客服配置', '{\"onlinetime\":\"09:00-18:00\",\"offlinemsg\":\"请在工作时间联系客服！\",\"nosessionmsg\":\"当前没有客服在线！请稍后重试！\",\"waitformsg\":\"请问有什么可以帮到您？\"}', '1497429674', '1497429674');
 INSERT INTO `fa_wechat_config` VALUES ('3', 'signin', '连续登录配置', '{\"s1\":\"100\",\"s2\":\"200\",\"s3\":\"300\",\"sn\":\"500\"}', '1497429711', '1497429711');
 
